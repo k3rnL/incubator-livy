@@ -23,7 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     # TODO: Possibly point to the ./build-ci-image.yaml with the "uses" key
-    container: ghcr.io/${{ github.repository_owner }}/livy-ci:latest
+    container: ghcr.io/${{ github.repository }}/livy-ci:latest
     strategy:
       matrix:
         maven_profile:
